@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+      <!-- ACTION - insert a title with no spaces (use _) -->
+      <title>assimilate_kit</title>
+
+      <!-- script tags start - do not modify -->
+         <meta charset="utf-8">
+	       <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+         <script type="text/javascript" src="properties.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/eventemitter3/4.0.0/index.js" type="text/javascript"></script>
+         <script src="https://cdn.jsdelivr.net/gh/assimilate-interactive/akit/lib/platform/jsartoolkit5/artoolkit.min.js"></script>
+         <script src="https://cdn.jsdelivr.net/gh/assimilate-interactive/akit/akit-aframe-master.js" type="text/javascript"></script>
+         <script src="https://cdn.jsdelivr.net/gh/assimilate-interactive/akit/lib/platform/arjs/threex-artoolkitcontext.js"></script>
+         <script src="https://cdn.jsdelivr.net/gh/assimilate-interactive/akit/akit-frame.js" type="text/javascript"></script>
+         <script type="text/javascript" src="app.js"></script>
+      <!-- script tags end -->
+
+     </head>
+
+     <body>
+       <!--init tags - do not modify -->
+       <script>akit.init()</script>
+       <div id="appscene"></div>
+        <!-- init tags end -->
+
+
+         <!-- aframe scene start -->
+         <a-scene akit>
+
+           <a-assets>
+
+             <a-asset-item id="gltfModel" src="model/vue_test_export_maya.gltf"></a-asset-item>
+
+             <!--
+                 1. select the assets folder and drag your image into the browser
+                 2.  click on the image and select 'copy'
+                 3.  uncomment the below <a-asset-item> line by removing the <!-- & -->
+             <!--
+                 4. paste the copied URL into the src="" quotes - eg src="https://cdn.glitch.com/myimg.gltf"
+                 5. delete the <a-asset-item> line above
+             -->
+
+               <!--    <a-asset-item id="gltfModel" src=""></a-asset-item>  -->
+
+           </a-assets>
+
+
+             <a-anchor name="test" group="test" marker="1">
+         		 <!-- ACTION - add aframe here-->
+         		  <a-gltf-model src="#gltfModel" animation-mixer></a-gltf-model>
+         		</a-anchor>
+
+       </a-scene>
+       <!-- aframe scene end-->
+
+     </body>
+
+ </html>

@@ -1,0 +1,223 @@
+{
+    "asset": {
+        "generator": "FBX2glTF v0.9.7",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "buffers": [
+        {
+            "byteLength": 775056,
+            "uri": "buffer.bin"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 209070,
+            "byteOffset": 0,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 212244,
+            "byteOffset": 209072,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 212244,
+            "byteOffset": 421316,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 141496,
+            "byteOffset": 633560,
+            "target": 34962
+        }
+    ],
+    "scenes": [
+        {
+            "name": "Root Scene",
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "accessors": [
+        {
+            "componentType": 5123,
+            "type": "SCALAR",
+            "count": 104535,
+            "bufferView": 0,
+            "byteOffset": 0
+        },
+        {
+            "componentType": 5126,
+            "type": "VEC3",
+            "count": 17687,
+            "bufferView": 1,
+            "byteOffset": 0,
+            "min": [
+                -1.01999998092651,
+                -1.01999998092651,
+                0.0
+            ],
+            "max": [
+                1.01999998092651,
+                1.01999998092651,
+                0.277637988328934
+            ]
+        },
+        {
+            "componentType": 5126,
+            "type": "VEC3",
+            "count": 17687,
+            "bufferView": 2,
+            "byteOffset": 0
+        },
+        {
+            "componentType": 5126,
+            "type": "VEC2",
+            "count": 17687,
+            "bufferView": 3,
+            "byteOffset": 0
+        }
+    ],
+    "images": [
+        {
+            "name": "Vegetation.jpg",
+            "uri": "Vegetation.jpg"
+        }
+    ],
+    "samplers": [
+        {}
+    ],
+    "textures": [
+        {
+            "name": "color map",
+            "sampler": 0,
+            "source": 0
+        }
+    ],
+    "materials": [
+        {
+            "name": "Vegetation",
+            "alphaMode": "OPAQUE",
+            "extras": {
+                "fromFBX": {
+                    "shadingModel": "Phong",
+                    "isTruePBR": false
+                }
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 0,
+                    "texCoord": 0
+                },
+                "baseColorFactor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "metallicFactor": 0.400000005960464,
+                "roughnessFactor": 0.301511347293854
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Procedural_terrain",
+            "primitives": [
+                {
+                    "material": 0,
+                    "mode": 4,
+                    "attributes": {
+                        "NORMAL": 2,
+                        "POSITION": 1,
+                        "TEXCOORD_0": 3
+                    },
+                    "indices": 0
+                }
+            ]
+        }
+    ],
+    "cameras": [
+        {
+            "name": "",
+            "type": "perspective",
+            "perspective": {
+                "znear": 6.64137077331543,
+                "zfar": 664137.125,
+                "aspectRatio": 1.33333337306976,
+                "yfov": 1.14267492294312
+            }
+        }
+    ],
+    "nodes": [
+        {
+            "name": "RootNode",
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "children": [
+                1,
+                2
+            ]
+        },
+        {
+            "name": "Main camera",
+            "translation": [
+                -243.103561401367,
+                102.189041137695,
+                -956.884460449219
+            ],
+            "rotation": [
+                -0.00392171833664179,
+                0.512442469596863,
+                0.00234031002037227,
+                0.858709335327148
+            ],
+            "scale": [
+                100.0,
+                100.0,
+                100.0
+            ],
+            "camera": 0
+        },
+        {
+            "name": "Procedural_terrain",
+            "translation": [
+                -602.550354003906,
+                -95.9994277954102,
+                -1303.76611328125
+            ],
+            "rotation": [
+                -0.70710676908493,
+                -0.0,
+                0.0,
+                0.70710676908493
+            ],
+            "scale": [
+                490.196075439453,
+                490.196075439453,
+                781.25
+            ],
+            "mesh": 0
+        }
+    ]
+}
